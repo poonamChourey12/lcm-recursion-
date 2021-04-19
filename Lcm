@@ -1,0 +1,23 @@
+#include<studio.h>
+Int lcm(int,int);
+Int main()
+{
+Int a, b, redult;
+Int prime[100];
+Printf("enter two numbers:");
+Scanf("%d%d",&a,&b);
+Result=lcm(a,b);
+Printf("the lcm of %d and %d is %\n",a,b,result);
+Return 0;
+}
+Int lcm(int a, int b)
+{
+Static int common =1;
+If(common %a==0 && common %b==0)
+{
+Return common;
+}
+common++;
+Lcm(a,b);
+Return common;
+}
